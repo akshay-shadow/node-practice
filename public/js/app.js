@@ -11,7 +11,7 @@ formElement.addEventListener('submit', (e) => {
     const place = locationNew.value
     // console.log(place)
 
-    fetch('http://localhost:3000/help?search=' + place).then((response) => {
+    fetch('/help?search=' + place).then((response) => {
         response.json().then((data) => {
             // console.log(data.data)
             // console.log(place + ' temperature is ' + data.data.temp)
